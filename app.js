@@ -20,6 +20,7 @@ function calc(e) {
 
 const cart = document.querySelector('#cart img');
 cart.onclick = () => {
+  console.clear()
   for (let i = 0; i < list.length; i++) {
     console.log(`Item name: ${list[i].name} - Quantity: ${list[i].quantity}`);
   }
