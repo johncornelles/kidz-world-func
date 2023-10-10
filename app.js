@@ -11,12 +11,8 @@ function calc(e) {
   let co = parseFloat(costText);
   let exist = list.find((item) => item.name === name);
 
-  if (exist) {
-    exist.quantity += 1;
-  } else {
-    list.push({ name, co, quantity: 1 });
-  }
-
+  if (exist) exist.quantity += 1;
+  else list.push({ name, co, quantity: 1 });
   totalcost += co;
   nos += 1;
   cartitems.textContent = nos;
