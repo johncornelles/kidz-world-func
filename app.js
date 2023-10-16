@@ -21,20 +21,8 @@ function calc(e) {
   cartitems.textContent = nos;
 }
 
-const cart = document.querySelector('#cart img');
+const cart = document.querySelector('#cart');
 cart.onclick = () => {
-  console.clear();
-  for (let i = 0; i < list.length; i++) {
-    console.log(`Item name: ${list[i].name} - Quantity: ${list[i].quantity}`);
-  }
-
-  const dollars = Math.floor(totalcost);
-  const cents = Math.round((totalcost - dollars) * 100);
-  console.log(`The total amount is ${dollars}$ dollars and ${cents} cents`);
-};
-
-const cartp = document.querySelector('#cart p');
-cartp.onclick = () => {
   console.clear();
   for (let i = 0; i < list.length; i++) {
     console.log(`Item name: ${list[i].name} - Quantity: ${list[i].quantity}`);
